@@ -52,7 +52,9 @@
     "concurrently": "^7.3.0",
     "eslint": "^7.32.0",
     "husky": "^8.0.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
+    "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^13.0.3",
     "metro-react-native-babel-preset": "^0.70.3",
     "postcss": "^8.4.16",
@@ -63,6 +65,9 @@
   },
   "jest": {
     "preset": "react-native",
+    "setupFiles": [
+      "<rootDir>/jest.setup.js"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -70,7 +75,44 @@
       "jsx",
       "json",
       "node"
-    ]
+    ],
+    "collectCoverageFrom": [
+      "src/*/.{ts,tsx}",
+      "!src/*/.stories.{ts,tsx}",
+      "!src/**/index.{ts,tsx}",
+      "!src/redux/*/.{ts,tsx}",
+      "!src/utils/{constants,themes}/*/.{ts,tsx}",
+      "!src/utils/functions/platform.{ts,tsx}",
+      "!src/utils/functions/getters.ts",
+      "!src/utils/functions/apple.ts",
+      "!src/services/*/.{ts,tsx}",
+      "!src/utils/environment.ts",
+      "!src/utils/navigation/linking.ts",
+      "!src/types/*/.{ts,tsx}",
+      "!src/assets/*/.{ts,tsx}",
+      "!src/screens/*/.{ts,tsx}",
+      "!src/modules/*/.{ts,tsx}",
+      "!src/components/Modal/*/.{ts,tsx}",
+      "!src/components/Calendar.{ts,tsx}",
+      "!src/App.tsx"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 60,
+        "functions": 60,
+        "lines": 60,
+        "statements": 60
+      }
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?@?react-native|@react-native-community|@react-navigation)"
+    ],
+    "modulePathIgnorePatterns": [
+      "e2e"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy"
+    }
   },
   "packageManager": "yarn@3.2.2",
   "husky": {
