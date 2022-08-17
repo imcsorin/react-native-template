@@ -12,6 +12,7 @@
     "start": "react-native start",
     "start:reset": "react-native start --reset-cache",
     "test": "jest",
+    "lint:ci": "eslint",
     "check": "prettier --check 'src/**/*.{ts,tsx}'",
     "build:tailwind": "tailwindcss --input input.css --output tailwind.css --no-autoprefixer && tailwind-rn",
     "dev:tailwind": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn --watch\"",
