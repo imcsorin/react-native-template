@@ -1,0 +1,12 @@
+{
+	"h-full": {
+		"style": {
+			"height": "100%"
+		}
+	},
+	"font-manrope-bold": {
+		"style": {
+			"fontFamily": "manrope-bold"
+		}
+	}
+}
