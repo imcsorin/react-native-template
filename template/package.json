@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "android": "react-native run-android && yarn dev:tailwind",
     "android:build": "yarn build:tailwind && cd android && ./gradlew bundleRelease",
     "android:test:release": "yarn build:tailwind && react-native run-android --variant=release",
