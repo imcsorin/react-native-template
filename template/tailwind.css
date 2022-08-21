@@ -1,7 +1,63 @@
+.mr-9 {
+  margin-right: 2.25rem
+}
+
 .h-full {
   height: 100%
 }
 
+.h-12 {
+  height: 3rem
+}
+
+.rounded-full {
+  border-radius: 9999px
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.p-0\.5 {
+  padding: 0.125rem
+}
+
+.p-0 {
+  padding: 0px
+}
+
 .font-manrope-bold {
-  font-family: manrope-bold
+  font-family: Manrope3-Bold
+}
+
+.font-manrope-medium {
+  font-family: Manrope3-Medium
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+
+.text-neutral-900 {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity))
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-neutral-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(23 23 23 / var(--tw-bg-opacity))
+  }
+
+  .dark\:text-neutral-50 {
+    --tw-text-opacity: 1;
+    color: rgb(250 250 250 / var(--tw-text-opacity))
+  }
 }

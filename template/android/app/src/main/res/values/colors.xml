@@ -1,0 +1,8 @@
+<resources>
+    <!-- text-white -->
+    <color name="statusBarColor">#ffffff</color>
+    <!-- text-sky-500 -->
+    <color name="primary">#0ea5e9</color>
+    <!-- text-neutral-900 -->
+    <color name="textColor">#171717</color>
+</resources>

@@ -3,5 +3,5 @@ export enum NAVIGATION {
 }
 
 export type RootStackParamList = {
-  [NAVIGATION.TEST]: undefined;
+  [NAVIGATION.TEST]: {from?: string};
 };

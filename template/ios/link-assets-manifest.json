@@ -2,11 +2,11 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/assets/fonts/manrope-bold.ttf",
+      "path": "src/assets/fonts/Manrope3-Bold.ttf",
       "sha1": "07822a58adec4ba380abe4cd3025c1523e231f17"
     },
     {
-      "path": "src/assets/fonts/manrope-medium.ttf",
+      "path": "src/assets/fonts/Manrope3-Medium.ttf",
       "sha1": "cc4df11216a5bb429198d1179591d2820dfaee06"
     }
   ]

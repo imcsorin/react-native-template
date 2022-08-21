@@ -53,8 +53,8 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>manrope-bold.ttf</string>
-		<string>manrope-medium.ttf</string>
+		<string>Manrope3-Bold.ttf</string>
+		<string>Manrope3-Medium.ttf</string>
 	</array>
 </dict>
 </plist>
